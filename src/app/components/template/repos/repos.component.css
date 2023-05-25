@@ -1,0 +1,31 @@
+.card {
+  margin: 1rem 2rem 0rem 4rem;
+}
+
+.card:first-child {
+  margin-top: 4rem;
+}
+
+.title {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.star img {
+  height: 20px;
+  width: 20px;
+  padding-right: 10px;
+}
+
+.star p {
+  padding-top: 1rem;
+}
