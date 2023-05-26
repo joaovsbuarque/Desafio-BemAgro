@@ -47,17 +47,32 @@
   padding-top: 0.5rem;
 }
 
-.button-Contato {
+.button-map {
   margin-top: 2rem;
   width: 280px;
   height: 48px;
-  background-color: #8c19d2;
+  background-color: #128a33;
   border: none;
   cursor: pointer;
   border-radius: 6px;
 }
 
-.button-Contato a {
+.button-repos {
+  margin-top: 2rem;
+  width: 280px;
+  height: 48px;
+  background-color: #128a33;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.button-repos a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button-map a {
   text-decoration: none;
   color: #ffffff;
 }

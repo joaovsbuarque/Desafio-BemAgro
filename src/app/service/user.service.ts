@@ -8,6 +8,7 @@ import { User } from "../components/template/user.model";
 })
 export class UserService {
   baseUrl = "https://api.github.com/users/";
+  private readonly localStorageKey = "users";
 
   constructor(private httpClient: HttpClient) {}
 

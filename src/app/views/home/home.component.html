@@ -1,5 +1,9 @@
 <div class="container">
-  <img src="../../../assets/Search.svg" alt="logo" />
+  <img
+    src="../../../assets/bem-agro.jpg"
+    alt="logo-bem-agro"
+    class="logo-bem-agro"
+  />
   <div class="container-search">
     <input type="text" #username id="username" name="username" />
     <button
@@ -8,6 +12,13 @@
       class="btn btn-"
     >
       Search
+    </button>
+    <button
+      mat-raised-button
+      (click)="getUsers(username.value)"
+      class="btn btn-"
+    >
+      Mostrar usuarios
     </button>
   </div>
 </div>

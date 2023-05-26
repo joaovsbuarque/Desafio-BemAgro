@@ -5,6 +5,18 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(146, 201, 161, 1) 80%,
+    rgba(18, 138, 51, 1) 100%
+  );
+}
+
+.logo-bem-agro {
+  height: 400px;
+  width: 600px;
 }
 
 .container-search {
@@ -15,7 +27,7 @@
 }
 
 .container-search button {
-  background: #8c19d2;
+  background: #128a33;
   color: #ffffff;
   height: 48px;
   width: 178px;
@@ -23,11 +35,12 @@
   border: none;
   cursor: pointer;
   margin-left: 2rem;
+  font-size: 20px;
 }
 
 .container-search input {
   height: 48px;
   width: 592px;
   border-radius: 6px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #128a33;
 }
