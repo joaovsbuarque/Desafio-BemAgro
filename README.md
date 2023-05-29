@@ -12,11 +12,11 @@
 
 #### Cloning repo
 
-`$ git clone https://github.com/joaovsbuarque/frontend-junior-test.git`
+`$ git clone https://github.com/joaovsbuarque/Desafio-BemAgro.git`
 
 #### Acessing project directory
 
-`$ cd frontend-junior-test`
+`$ cd Desafio-BemAgro`
 
 #### Instaling project dependencies
 
@@ -32,6 +32,6 @@ Run `ng` build to build the project. The build artifacts will be stored in the `
 
 ### Motivação de escolha das libs e frameworks (pt)
 
-#### A escolha do Materil UI foi feita para facilitar em questão da responsividade, além de entregar parte do layout ajudando a deixar a estilização mais próxima da que foi pedida.
+#### A escolha do Materil UI foi feita para facilitar em questão da responsividadee e facilitar na estilização.
 
 #### Já a estrutura do projeto segui a recomendada na construção de projetos Angular de componentizar a aplicação o máximo possível, podendo desacoplar e utilizar em alguma outra página. Na pasta (views) tem as duas paginas home e perfil, já na pasta (services) tem as duas requisições, uma para repositórios e outra para o user. E na pasta (components) tem o model das duas requisições e da junção das duas gitUser e dentro de template os três componentes da página de perfil, o header, repos e sidebar eles que podem ser utilizados em outro lugar da aplicação.
