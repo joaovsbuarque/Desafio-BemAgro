@@ -4,6 +4,8 @@ import { User } from "src/app/components/template/user.model";
 import { gitUser } from "src/app/components/template/gitUser.model";
 import { UserService } from "src/app/service/user.service";
 import { RepositoriosService } from "src/app/service/repositorios.service";
+import { MatDialog } from "@angular/material/dialog";
+import { UserPopupComponent } from "src/app/components/template/user-popup/user-popup.component";
 
 @Component({
   selector: "app-home",
@@ -12,11 +14,13 @@ import { RepositoriosService } from "src/app/service/repositorios.service";
 })
 export class HomeComponent implements OnInit {
   username: string | undefined;
+  users: User[] = [];
 
   constructor(
     private router: Router,
     public userService: UserService,
-    public repositoriesService: RepositoriosService
+    public repositoriesService: RepositoriosService,
+    private dialog: MatDialog
   ) {}
   ngOnInit(): void {}
 
@@ -25,6 +29,12 @@ export class HomeComponent implements OnInit {
       this.repositoriesService.getRepositorios(resp).subscribe((repo) => {
         this.navigateToUserPage({ userData: data, repoData: repo });
       });
+    });
+  }
+
+  openUserPopup() {
+    const dialogRef = this.dialog.open(UserPopupComponent, {
+      data: { users: this.users },
     });
   }
 

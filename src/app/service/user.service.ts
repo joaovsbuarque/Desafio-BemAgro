@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { User } from "../components/template/user.model";
@@ -7,6 +7,7 @@ import { User } from "../components/template/user.model";
   providedIn: "root",
 })
 export class UserService {
+  users: any[] = [];
   baseUrl = "https://api.github.com/users/";
   private readonly localStorageKey = "users";
 
@@ -14,5 +15,13 @@ export class UserService {
 
   public getUsers(user: string): Observable<User> {
     return this.httpClient.get<User>(this.baseUrl + user);
+  }
+  public searchUsers(username: string) {
+    const url = `https://api.github.com/search/users?q=${encodeURIComponent(
+      username
+    )}`;
+    this.httpClient.get(url).subscribe((response: any) => {
+      this.users = response.items;
+    });
   }
 }
