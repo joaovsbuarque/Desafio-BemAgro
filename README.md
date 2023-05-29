@@ -26,7 +26,8 @@
 
 `$ npm start`
 
-#### Build
+#### Build!
+[Captura de tela 2023-05-29 123843](https://github.com/joaovsbuarque/Desafio-BemAgro/assets/69541607/d6aeca3a-dc48-49f8-838e-e7aebfa127c0)
 
 Run `ng` build to build the project. The build artifacts will be stored in the `dist/` directory.
 
