@@ -55,6 +55,8 @@
   border: none;
   cursor: pointer;
   border-radius: 6px;
+  cursor: not-allowed;
+  color: #ffffff;
 }
 
 .button-repos {
@@ -68,11 +70,6 @@
 }
 
 .button-repos a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.button-map a {
   text-decoration: none;
   color: #ffffff;
 }

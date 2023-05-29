@@ -15,6 +15,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatCardModule } from "@angular/material/card";
 import { RepositoriosService } from "./service/repositorios.service";
 import { PerfilComponent } from "./views/perfil/perfil.component";
+import { MatDialogModule } from "@angular/material/dialog";
+import { UserPopupComponent } from './components/template/user-popup/user-popup.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,10 @@ import { PerfilComponent } from "./views/perfil/perfil.component";
     HomeComponent,
     ReposComponent,
     PerfilComponent,
+    UserPopupComponent,
   ],
   imports: [
+    MatDialogModule,
     HttpClientModule,
     BrowserModule,
     MatToolbarModule,
